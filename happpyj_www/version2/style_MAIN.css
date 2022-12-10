@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'NEXONLv1Gothic';
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXONLv1Gothic';
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-style: normal;
+}
+
+* { margin: 0; padding: 0; border: 0; }
+a { text-decoration: 0; color:#222328; }
+img { border: 0; }
+ul,li { list-style: none; color:#222328; }
+table { border-spacing: 0; }
+
+/* body */ 
+body {
+    font-family: 'NEXONLv1Gothic'; font-weight: 400; color:#222328;
+    background: #D8E5D9;
+}
+header { 
+    width: 100%; height: 50px;
+    background: #81c784; 
+    text-align: center;
+}
+header h1 {
+    display: inline-block;
+    font-size: 20px;
+    margin: 15px;
+    border-bottom: 1px dashed #fff;
+}
+
+/* nav */
+.paraNav {
+    width: 100%; height: 60px;
+    text-align: center;
+    background: rgba(0,0,0,.4);
+    /* padding: 10px 0; */
+    transition: top 0.4s ease;
+    /* border-radius: 50px; */    
+}
+.paraNav li {
+    display: inline; 
+    list-style: none;
+}
+.paraNav li a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 0; margin: 8px 0;
+    width: 80px; height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 30px;
+}
+.paraNav li.active a {
+    background: #fff;
+    color: #000;
+}
+
+/* About */
+#About_Me {
+    width: 100%; height: calc(100vh - 110px);
+    background: #66bb6a;
+}
+#About_Down { width: 100%; height: 10vw; }
+.wrap1200 {
+    width: 1200px; height: 100%; margin: 0 auto;
+}
+.download {
+    width: 50%; height: 100%;
+    float: left; 
+}
+.download:nth-child(1) { background: #4caf50;  }
+.download:nth-child(2) { background: #43a047; }
+
+/* Skill */
+#Skill {
+    clear: both;
+    width: 100%; height: 400px;
+    background: #388e3c;
+}
+#Skill h2 {
+    background: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* History */
+#History {
+    width: 100%; height: 500px;
+    background: #43a047;
+}
+#History h2 {
+    background: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Work */
+#Work {
+    width: 100%; height: 50vw;
+    background: #4caf50;
+}
+.Work_cont_wrap {
+    height: 100%;
+    float: left;
+}
+.Work_cont_wrap:nth-child(1) { width: 70%; background:bisque; }
+.Work_cont_wrap:nth-child(2) { width: 30%; background:cadetblue; }
+.Work_content:nth-child(1) {
+    width: 45%; height: 55%; 
+    float: left;
+    background: white;
+}
+.Work_content:nth-child(2) {
+    width: 55%; height: 55%; 
+    float: left;
+    background:darkseagreen;
+}
+.Work_content:nth-child(3) {
+    width: 100%; height: 45%; 
+    float: left;
+    background:darkkhaki;
+}
+
+/* Portfolio */
+#Portfolio {
+    width: 100%; 
+    background:#388e3c;
+}
+#Portfolio h2 {
+    background: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* footer */
+footer {
+    width: 100%; height: 100px;
+    background: navy;
+}
