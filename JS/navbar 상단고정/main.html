@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함예진 포트폴리오</title>
+    <link rel="stylesheet" href="css/style_MAIN.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <!-- <script src="js/app.js"></script> -->
+    <script src="https://kit.fontawesome.com/ac60fa24ed.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- info -->
+    <!-- <div class="paraScroll">scrollTop() : <span>0</span>px</div> -->
+    <!-- //info -->
+
+    <header>
+        <h1> Ham yejin </h1>
+    </header>
+
+    <!-- nav -->
+    <nav id="lnb" class="paraNav">
+        <ul>
+            <li class="active"><a href="#section1">About</a></li>
+            <li><a href="#section2">Skills</a></li>
+            <li><a href="#section3">History</a></li>
+            <li><a href="#section4">Work</a></li>
+            <li><a href="#section5">Portfolio</a></li>
+        </ul>
+    </nav>
+    <!-- //nav -->
+
+    <section>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        // navbar 상단 고정
+        $(function() {
+            var lnb = $("#lnb").offset().top;
+
+            $(window).scroll(function() {
+                
+                var window = $(this).scrollTop();
+                
+                if(lnb <= window) {
+                $("#lnb").addClass("fixed");
+                }else{
+                $("#lnb").removeClass("fixed");
+                }
+            })
+        });
+        
+    </script> 
+
+</body>
+</html>
