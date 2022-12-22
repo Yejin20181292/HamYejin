@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함예진 포트폴리오</title>
+    <link rel="stylesheet" href="css/style_MAIN.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <!-- <script src="js/app.js"></script> -->
+    <script src="https://kit.fontawesome.com/ac60fa24ed.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="section2" class="content__item">
+      <div class="wrap1200">
+          <h2>SKILLS</h2>
+          <div id="skill">
+              <div class="skill_list">
+                  <span class="skill_num animate" data-rate="90"></span>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- //section2 -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script>
+      //skill 숫자 카운트 업
+      $(function(){
+
+          var executed = false;
+
+          $(window).scroll(function(){
+              var threshold = $('#section2').offset().top - 500;
+
+              if(!executed) { // if(executed == false)
+                  if($(window).scrollTop() >= threshold){
+                      var progressRate = $('.animate').attr('data-rate')
+                      //skill_num progress 사용자속성 값이 percent->>> 90%(data-rate)로 바뀜
+
+                      $({percent: 0}).animate({percent:progressRate},{
+                          duration:1500, //1.5초
+                          progress:function(){
+                              var now = this.percent;
+                              $('.animate').text(Math.ceil(now)+'%');
+                          }
+                      });
+                      executed = true;
+                  }//if 조건문
+              }// executed if문
+          });
+      });
+
+  </script> 
+
+</body>
+</html>
